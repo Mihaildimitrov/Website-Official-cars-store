@@ -1,0 +1,99 @@
+/*CSS for header --> */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    background-color: #404040;
+    position: fixed;
+}
+
+.container {
+    margin: 0;
+}
+
+.menu {
+    padding-top: 30px;
+}
+
+.logo {
+    padding: 0;
+    padding-top: 2px;
+    padding-left: 150px;
+}
+
+img {
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: red;
+}
+
+img {
+    padding-left: 10px;
+}
+
+#brand {
+    font-family: "Brush Script MT", cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2B2A29;
+}
+
+
+/*CSS for footer --> */
+
+footer {
+    width: 100%;
+    position: fixed;
+    background-color: #404040;
+    bottom: 0;
+}
+
+#github p {
+    padding-left: 5px;
+    padding-top: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: white;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+#motivationwords p {
+    margin: 0;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+.create {
+    text-align: right;
+}
+
+.create p {
+    margin: 0;
+    text-decoration-style: none;
+    padding-right: 10px;
+    color: white;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
