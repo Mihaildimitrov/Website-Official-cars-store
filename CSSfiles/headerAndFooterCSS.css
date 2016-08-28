@@ -8,7 +8,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #404040;
+    background-color: #505050;
 }
 
 .container {
@@ -39,7 +39,7 @@ nav ul li a {
     color: white;
 }
 
-nav ul li:hover a {
+.navi nav ul li:hover a {
     text-decoration: none;
     font-size: 1.4em;
     color: red;
@@ -62,7 +62,7 @@ img {
 
 footer {
     width: 100%;
-    background-color: #404040;
+    background-color: #505050;
 }
 
 .mainfooter {
