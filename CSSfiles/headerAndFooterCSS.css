@@ -9,7 +9,6 @@ body {
 header {
     width: 100%;
     background-color: #404040;
-    position: fixed;
 }
 
 .container {
@@ -63,9 +62,11 @@ img {
 
 footer {
     width: 100%;
-    position: fixed;
     background-color: #404040;
-    bottom: 0;
+}
+
+.mainfooter {
+    margin: 0;
 }
 
 #github p {
@@ -87,6 +88,7 @@ footer {
 }
 
 .create {
+    padding-right: 6px;
     text-align: right;
 }
 
