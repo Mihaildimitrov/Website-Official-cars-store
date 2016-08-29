@@ -1,0 +1,27 @@
+main {
+    margin: 0;
+    padding: 0;
+}
+
+#firstsection {
+    width: 100%;
+    height: 550px;
+    background-image: url(team2.png);
+    background-repeat: no-repeat;
+}
+
+#secondsection {
+    width: 100%;
+    background-color: #505050;
+}
+
+section article div h1 {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    color: white;
+}
+
+div p {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 0.7em;
+    color: white;
+}
