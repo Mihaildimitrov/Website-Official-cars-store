@@ -4,10 +4,20 @@ main {
 }
 
 #firstsection {
-    width: 100%;
-    height: 550px;
-    background-image: url(team2.png);
+    height: 100%;
+    background-image: url(Pictures/team1.jpg);
+    background-position: 10%;
     background-repeat: no-repeat;
+}
+#firstsection h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+    font-size: 7.0em;
+    font-family: "Brush Script MT",cursive;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 30%
 }
 
 #secondsection {
@@ -18,9 +28,11 @@ main {
 section article div h1 {
     font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
     color: white;
+    font-size: 1.5em;
 }
 
-div p {
+article div p {
+    padding-top: 10%;
     font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
     font-size: 0.7em;
     color: white;
