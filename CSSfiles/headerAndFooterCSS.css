@@ -11,12 +11,13 @@ header {
     background-color: #505050;
 }
 
-.container {
-    margin: 0;
-}
-
 .menu {
     padding-top: 30px;
+}
+
+#navibar {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .logo {

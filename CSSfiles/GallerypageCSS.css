@@ -1,0 +1,42 @@
+#myCarousel .carousel-inner > .item > img,
+#myCarousel .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+body {
+    background-color: #505050;
+}
+
+main {
+    background-color: #505050;
+    height: 100%;
+}
+
+#slider {
+    background-color: #505050;
+    margin-top: 5%;
+}
+
+#myCarousel #left {
+    margin-left: 0;
+    left: 0;
+}
+
+#myCarousel #right {
+    margin-right: 0;
+    right: 0;
+}
+
+
+/*
+#slider {
+    margin-left: 0;
+    margin-right: 0;
+}
+*/
