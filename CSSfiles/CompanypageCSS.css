@@ -1,0 +1,133 @@
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #505050;
+}
+
+#news-1 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#news-2 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#firstinfo {
+    background-image: url(Pictures/sportcar.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#firstinfo h1 {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 3em;
+    color: white;
+    padding: 20%;
+}
+
+#firstinfo:hover {
+    background-size: 110% 110%;
+}
+
+#secondinfo {
+    background-image: url(Pictures/LEDHeadlights.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#secondinfo h1 {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 3em;
+    color: white;
+    padding: 20%;
+}
+
+#secondinfo:hover {
+    background-size: 110% 110%;
+}
+
+#thirdinfo {
+    background-image: url(Pictures/factory.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#thirdinfo h1 {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 3em;
+    color: white;
+    padding: 20%;
+}
+
+#thirdinfo:hover {
+    background-size: 110% 110%;
+}
+
+#fourthinfo {
+    background-image: url(Pictures/electriccar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#fourthinfo h1 {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 3em;
+    color: white;
+    padding: 20%;
+}
+
+#fourthinfo:hover {
+    background-size: 110% 110%;
+}
+
+#line {
+    width: 100%;
+    height: 5px;
+    background-color: #505050;
+}
+
+#history-1 {
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url(Pictures/historypic.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 5%;
+    padding-bottom: 30%;
+}
+
+#history-1 h1 {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 3em;
+    font-style: italic;
+    color: white;
+    padding-left: 2%;
+}
+
+#history-1:hover {
+    background-size: 110% 110%;
+}
+
+#history-2 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#history-2 h1 {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.2em;
+    font-style: italic;
+    padding-left: 5%;
+    color: #FFE97F;
+}
+
+#history-2 div {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    color: #FFE97F;
+}
