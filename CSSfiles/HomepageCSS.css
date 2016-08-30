@@ -30,6 +30,7 @@ main {
 
 #section1 {
     background-image: url(Pictures/newmodelpic.jpg);
+    background-size: 100% 100%;
     background-position: 70%;
     background-repeat: no-repeat;
 }
@@ -61,6 +62,7 @@ main {
 
 #section2 {
     background-image: url(Pictures/electriclogo.jpg);
+    background-size: 100% 100%;
     background-position: 70%;
     background-repeat: no-repeat;
 }
@@ -87,6 +89,7 @@ main {
 
 #section3 {
     background-image: url(Pictures/clock.jpg);
+    background-size: 100% 100%;
     background-position: 40%;
     background-repeat: no-repeat;
 }

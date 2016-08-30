@@ -6,51 +6,29 @@ body {
     font-size: 16px;
 }
 
-header {
+#header {
     width: 100%;
+    height: 100px;
+    margin-bottom: 2%;
     background-color: #505050;
 }
 
-.menu {
-    padding-top: 30px;
+#header .navbar {
+    background: #505050;
 }
 
-#navibar {
-    margin-left: 0;
-    margin-right: 0;
+#logo {
+    width: 125px;
+    height: 100px;
+    margin-right: 3%;
+    margin-top: 1%;
 }
 
-.logo {
-    padding: 0;
-    padding-top: 2px;
-    padding-left: 100px;
-}
-
-img {
+#logo img {
     height: 60px;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
-    color: white;
-}
-
-.navi nav ul li:hover a {
-    text-decoration: none;
-    font-size: 1.4em;
-    color: red;
-}
-
-img {
-    padding-left: 10px;
-}
-
-#brand {
+#logo p {
     font-family: "Brush Script MT", cursive;
     font-style: italic;
     font-weight: bold;
@@ -58,15 +36,37 @@ img {
     color: #2B2A29;
 }
 
+#header nav ul {
+    list-style-type: none;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    color: white;
+}
+
+#header .navbar ul li:hover a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: red;
+}
+
+#header .menu {
+    margin-top: 3%;
+}
+
 
 /*CSS for footer --> */
 
-footer {
+#footer {
+    bottom: 0;
+    position: fixed;
     width: 100%;
     background-color: #505050;
 }
 
-.mainfooter {
+#footer .mainfooter {
     margin: 0;
 }
 
@@ -88,12 +88,12 @@ footer {
     font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 }
 
-.create {
+#footer .create {
     padding-right: 6px;
     text-align: right;
 }
 
-.create p {
+#footer .create p {
     margin: 0;
     text-decoration-style: none;
     padding-right: 10px;
