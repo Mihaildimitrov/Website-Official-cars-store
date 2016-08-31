@@ -17,14 +17,21 @@
     <title>SUV Motors GALLERY</title>
 </head>
 
+<!--This is body tag which is contains all information about Gallery page.-->
+<!--Here we use bootstrap classes to add functionality.-->
+
 <body>
+
+    <!--This is header tag, it is the same for each page.-->
     <header id="header">
         <nav class="navbar navbar-fixed-top">
             <ul class="row">
+                <!--This is a list of all the pages of the application.-->
                 <li id="logo" class="col-xs-2">
                     <img src="images/logo.png" alt="Our logo">
                     <p>SUV Motors</p>
                 </li>
+                <!--This links sends to each page of the site.-->
                 <li class="col-xs-2 menu">
                     <a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
                 </li>
@@ -44,10 +51,12 @@
         </nav>
     </header>
 
+    <!--This is Main tag which it contains all individual information about the Gallery page.-->
     <main>
+        <!--Here we use bootstrap classes to add functionality(Slider-Carousel).-->
         <div id="slider-one" class="container">
             <div id="myCarousel" class="carousel slide">
-                <!-- Indicators -->
+                <!--Here list indicators for each picture in slider.-->
                 <ol class="carousel-indicators">
                     <li class="item1 active"></li>
                     <li class="item2"></li>
@@ -65,7 +74,7 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-
+                    <!--This is the list of all pictures for slider.-->
                     <div class="item active">
                         <img src="images/firstmodel/10pic.png" alt="car">
                     </div>
@@ -113,7 +122,7 @@
                     </div>
                 </div>
 
-                <!-- Left and right controls -->
+                <!--Left and right button controls.-->
                 <a id="left" class="left carousel-control" href="#myCarousel" role="button">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 </a>
@@ -124,23 +133,27 @@
         </div>
     </main>
 
+    <!--This is footer tag, it is the same for each page.-->
     <footer id="footer">
         <div class="row mainfooter">
+            <!--This link sends to github profile of creator.-->
             <div class="col-sm-3">
-                <a id="github" href="https://github.com/Mihaildimitrov/Website-Official-cars-store">
+                <a id="github" href="https://github.com/Mihaildimitrov/Website-Official-cars-store ">
                     <p>Link to github repository</p>
                 </a>
             </div>
             <div id="motivationwords" class="col-sm-6">
                 <p>Our cars are a manifestation of our passion. Performance that cannot be measured, only felt. That’s why we call it art.</p>
             </div>
+            <!--This is the name of creator.-->
             <div class="col-sm-3 create">
                 <p>Created by:</p>
                 <p>Mihail Dimitrov</p>
             </div>
         </div>
     </footer>
-
+    <!--Here call the java script file from directory "JSfiles" with name "GalleryJS" for slider functionality  -->
+    <!--Move pictures automatically-->
     <script src="JSfiles/GalleryJS.js"></script>
 </body>
 

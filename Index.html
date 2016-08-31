@@ -17,14 +17,20 @@
 
 </head>
 
+<!--This is body tag which is contains all information about home page.-->
+
 <body>
+
+    <!--This is header tag, it is the same for each page.-->
     <header id="header">
         <nav class="navbar navbar-fixed-top">
             <ul class="row">
+                <!--This is a list of all the pages of the application.-->
                 <li id="logo" class="col-xs-2">
                     <img src="images/logo.png" alt="Our logo">
                     <p>SUV Motors</p>
                 </li>
+                <!--This links sends to each page of the site.-->
                 <li class="col-xs-2 menu">
                     <a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
                 </li>
@@ -44,18 +50,23 @@
         </nav>
     </header>
 
-    <!-- Main -->
+    <!--This is Main tag which it contains all individual information about the Home page.-->
 
     <main>
+        <!--This is navigation with all news in company. It contains pictures and text.-->
+        <!--Here we use bootstrap classes to add functionality.-->
         <div class="row navigation">
+            <!--This is a list of all news in company.-->
             <ul class="nav navbar-nav">
                 <li><a href="#section1">1. Our new models</a></li>
                 <li><a href="#section2">2. Electric inovation</a></li>
                 <li><a href="#section3">3. Upcoming event</a></li>
             </ul>
         </div>
+        <!--This div with ID "section1" contains first news-->
         <div id="section1" class="container-fluid">
             <div class="row">
+                <!--Pictures of all new cars.-->
                 <h1>New models:</h1>
                 <img class="col-sm-4 info-2" src="images/newandoldmodels/2new.png" alt="2">
                 <img class="col-sm-4 info-2" src="images/newandoldmodels/1new.png" alt="1">
@@ -73,6 +84,7 @@
                 </p>
             </div>
         </div>
+        <!--This div with ID "section2" contains contains the second news.-->
         <div id="section2" class="container-fluid">
             <div class="row">
                 <h1>Looking to the future</h1>
@@ -83,6 +95,7 @@
                 </p>
             </div>
         </div>
+        <!--This div with ID "section3" contains contains the last news for upcoming event.-->
         <div id="section3" class="container-fluid">
             <div class="row">
                 <h1>Company history</h1>
@@ -95,16 +108,19 @@
         </div>
     </main>
 
+    <!--This is footer tag, it is the same for each page.-->
     <footer id="footer">
         <div class="row mainfooter">
+            <!--This link sends to github profile of creator.-->
             <div class="col-sm-3">
                 <a id="github" href="https://github.com/Mihaildimitrov/Website-Official-cars-store ">
                     <p>Link to github repository</p>
                 </a>
             </div>
-            <div id="motivationwords" class="col-sm-6 ">
+            <div id="motivationwords" class="col-sm-6">
                 <p>Our cars are a manifestation of our passion. Performance that cannot be measured, only felt. That’s why we call it art.</p>
             </div>
+            <!--this is the name of creator.-->
             <div class="col-sm-3 create">
                 <p>Created by:</p>
                 <p>Mihail Dimitrov</p>
