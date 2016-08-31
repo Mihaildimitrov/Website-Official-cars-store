@@ -1,0 +1,146 @@
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#firstsection {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#secondsection {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#thirdsection {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#model-1 {
+    background-image: url(Pictures/roadmodel1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#model-1 img {
+    width: 42%;
+    height: 42%;
+    margin: 3%;
+}
+
+#model-1 h1 {
+    padding-top: 5%;
+    margin-left: 30%;
+    font-family: Papyrus, fantasy;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 20%;
+}
+
+#model-2 {
+    background-image: url(Pictures/roadmodel2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#model-2 img {
+    width: 42%;
+    height: 42%;
+    margin: 3%;
+}
+
+#model-2 h1 {
+    padding-top: 5%;
+    margin-left: 30%;
+    font-family: Papyrus, fantasy;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 20%;
+}
+
+#model-3 {
+    background-image: url(Pictures/roadmodel3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#model-3 img {
+    width: 42%;
+    height: 42%;
+    margin: 3%;
+}
+
+#model-3 h1 {
+    padding-top: 5%;
+    margin-left: 30%;
+    font-family: Papyrus, fantasy;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 20%;
+}
+
+#model-4 {
+    background-image: url(Pictures/roadmodel4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#model-4 img {
+    width: 42%;
+    height: 42%;
+    margin: 3%;
+}
+
+#model-4 h1 {
+    padding-top: 5%;
+    margin-left: 20%;
+    font-family: Papyrus, fantasy;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 20%;
+}
+
+#model-5 {
+    background-image: url(Pictures/roadmodel2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#model-5 img {
+    width: 42%;
+    height: 42%;
+    margin: 3%;
+}
+
+#model-5 h1 {
+    padding-top: 5%;
+    margin-left: 30%;
+    font-family: Papyrus, fantasy;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 20%;
+}
+
+#model-6 {
+    background-image: url(Pictures/roadmodel6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#model-6 img {
+    width: 42%;
+    height: 42%;
+    margin: 3%;
+}
+
+#model-6 h1 {
+    padding-top: 5%;
+    margin-left: 30%;
+    font-family: Papyrus, fantasy;
+    color: black;
+    font-size: 3.0em;
+    margin-bottom: 20%;
+}

@@ -100,10 +100,10 @@ main {
 }
 
 #history-1 h1 {
-    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-family: Papyrus, fantasy;
+    color: black;
     font-size: 3em;
     font-style: italic;
-    color: white;
     padding-left: 2%;
 }
 

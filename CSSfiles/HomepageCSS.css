@@ -50,6 +50,18 @@ main {
     color: white;
 }
 
+#section1:hover {
+    background-size: 110% 110%;
+}
+
+#section2:hover {
+    background-size: 110% 110%;
+}
+
+#section3:hover {
+    background-size: 110% 110%;
+}
+
 .container-fluid p {
     margin: 0;
     padding: 0;
