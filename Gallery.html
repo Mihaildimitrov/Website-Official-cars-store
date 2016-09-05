@@ -58,86 +58,19 @@
         </div>
     </header>
 
-    <!--This is Main tag which it contains all individual information about the Home page.-->
-
-    <main class="container">
-        <!--Here we use bootstrap classes to add functionality(Slider-Carousel).-->
-        <div id="slider-one">
-            <div id="myCarousel" class="carousel slide">
-                <!--Here list indicators for each picture in slider.-->
-                <ol class="carousel-indicators">
-                    <li class="item1 active"></li>
-                    <li class="item2"></li>
-                    <li class="item3"></li>
-                    <li class="item4"></li>
-                    <li class="item5"></li>
-                    <li class="item6"></li>
-                    <li class="item7"></li>
-                    <li class="item8"></li>
-                    <li class="item9"></li>
-                    <li class="item10"></li>
-                    <li class="item11"></li>
-                    <li class="item12"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <!--This is the list of all pictures for slider.-->
-                    <div class="item active">
-                        <img src="images/firstmodel/10pic.png" alt="car">
-                    </div>
-
-                    <div class="item">
-                        <img src="images/firstmodel/13pic.png" alt="car">
-                    </div>
-
-                    <div class="item">
-                        <img src="images/secondmodel/20pic.png" alt="car">
-                    </div>
-
-                    <div class="item">
-                        <img src="images/secondmodel/21pic.png" alt="car">
-                    </div>
-                    <div class="item">
-                        <img src="images/thirdmodel/32pic.png" alt="car">
-                    </div>
-
-                    <div class="item">
-                        <img src="images/thirdmodel/31pic.png" alt="car">
-                    </div>
-
-                    <div class="item">
-                        <img src="images/fourthmodel/41pic.png" alt=car ">
-                    </div>
-
-                    <div class="item ">
-                        <img src="images/fourthmodel/44pic.png " alt=car">
-                    </div>
-                    <div class="item">
-                        <img src="images/fifthmodel/50pic.png" alt="car">
-                    </div>
-
-                    <div class="item">
-                        <img src="images/fifthmodel/51pic.png" alt="car">
-                    </div>
-
-                    <div class="item">
-                        <img src="images/sixthmodel/61pic.png" alt="car">
-                    </div>
-
-                    <div class="item">
-                        <img src="images/sixthmodel/64pic.png" alt="car">
-                    </div>
-                </div>
-
-                <!--Left and right button controls.-->
-                <a id="left" class="left carousel-control" href="#myCarousel" role="button">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                </a>
-                <a id="right" class="right carousel-control" href="#myCarousel" role="button">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                </a>
-            </div>
+    <!--This is Main tag which it contains all individual information about the Gallery page.-->
+    <main onload="pictureSliderAutomatically()" class="container">
+        <!-- This div with class "picture-container" contains picture template for slider -->
+        <div class="picture-container">
+            <img id="picture" src="images/Slider/car1.png" alt="car">
+        </div>
+        <!-- This div contains left button for change picture in slider -->
+        <div class="leftButton-holder">
+            <img onclick="pictureSlider(-1)" id="leftButton" src="images/leftarrow.png" alt="button">
+        </div>
+        <!-- This div contains right button for change picture in slider -->
+        <div class="rightButton-holder">
+            <img onclick="pictureSlider(1)" id="rightButton" src="images/rightarrow.png" alt="button">
         </div>
     </main>
 

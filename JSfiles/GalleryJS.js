@@ -1,50 +1,47 @@
-        $(document).ready(function() {
-            // Activate Carousel
-            $("#myCarousel").carousel();
+// With this varable count picture in slider.
+var imagecount = 1;
+// This variable is number of picture in slider.
+var totalImage = 10;
 
-            // Enable Carousel Indicators
-            $(".item1").click(function() {
-                $("#myCarousel").carousel(0);
-            });
-            $(".item2").click(function() {
-                $("#myCarousel").carousel(1);
-            });
-            $(".item3").click(function() {
-                $("#myCarousel").carousel(2);
-            });
-            $(".item4").click(function() {
-                $("#myCarousel").carousel(3);
-            });
-            $(".item2").click(function() {
-                $("#myCarousel").carousel(4);
-            });
-            $(".item3").click(function() {
-                $("#myCarousel").carousel(5);
-            });
-            $(".item4").click(function() {
-                $("#myCarousel").carousel(6);
-            });
-            $(".item2").click(function() {
-                $("#myCarousel").carousel(7);
-            });
-            $(".item3").click(function() {
-                $("#myCarousel").carousel(8);
-            });
-            $(".item4").click(function() {
-                $("#myCarousel").carousel(9);
-            });
-            $(".item2").click(function() {
-                $("#myCarousel").carousel(10);
-            });
-            $(".item3").click(function() {
-                $("#myCarousel").carousel(11);
-            });
+// var leftClickButton = document.getElementById("leftButton");
 
-            // Enable Carousel Controls
-            $(".left").click(function() {
-                $("#myCarousel").carousel("prev");
-            });
-            $(".right").click(function() {
-                $("#myCarousel").carousel("next");
-            });
-        });
+// leftClickButton.addEventListener('clicked', pictureSlider(-1), false);
+
+// var rightClickButton = document.getElementById("rightButton");
+
+// rightClickButton.addEventListener("click", pictureSlider(1), false);
+
+//This function with name "pictureSlider" change the picture in slider if the buttons are clicked.
+function pictureSlider(number) {
+    //In this variable save selected element from DOM.
+    var image = document.getElementById('picture');
+    //Upgrade counter "imagecount"
+    imagecount = imagecount + number;
+    //When 'imagecount' is greater than total picture in slider, 'imagecount' is equal to 1, and show first picture in slider.
+    if (imagecount > totalImage) {
+        imagecount = 1;
+    }
+    //When 'imagecount' is less than one, 'imagecount' is equal to total picture in slider, and show last picture in slider.
+    if (imagecount < 1) {
+        imagecount = totalImage;
+    }
+    //Change property "src" of "image" variable, and change picture in slider.
+    image.src = "images/Slider/car" + imagecount + ".png";
+}
+
+//This function with name "setInterval" change picture in slider automatically.
+window.setInterval(
+    function pictureSliderAutomatically() {
+        var image = document.getElementById('picture');
+        imagecount = imagecount + 1;
+        //When 'imagecount' is greater than total picture in slider, 'imagecount' is equal to 1, and show first picture in slider.
+        if (imagecount > totalImage) {
+            imagecount = 1;
+        }
+        //When 'imagecount' is less than one, 'imagecount' is equal to total picture in slider, and show last picture in slider.
+        if (imagecount < 1) {
+            imagecount = totalImage;
+        }
+        image.src = "images/Slider/car" + imagecount + ".png";
+        //After function we set how many seconds to change picture in slider.
+    }, 3000);
