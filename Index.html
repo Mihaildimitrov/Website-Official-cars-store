@@ -20,34 +20,41 @@
 <!--This is body tag which is contains all information about home page.-->
 
 <body>
-
     <!--This is header tag, it is the same for each page.-->
-    <header id="header">
-        <nav class="navbar navbar-fixed-top">
-            <ul class="row">
-                <!--This is a list of all the pages of the application.-->
-                <li id="logo" class="col-xs-2">
-                    <img src="images/logo.png" alt="Our logo">
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div id="logo-section">
+                    <div id="logo-wrapper">
+                        <img src="images/logo.png" alt="Our logo">
+                    </div>
                     <p>SUV Motors</p>
-                </li>
-                <!--This links sends to each page of the site.-->
-                <li class="col-xs-2 menu">
-                    <a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Models.html"><span class="glyphicon glyphicon-search"></span>Models</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span>Gallery</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Company.html"><span class="glyphicon glyphicon-user"></span>Company</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span>Contact</a>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <nav>
+                    <!--This is a list of all the pages of the application.-->
+                    <ul class="row header-navigation">
+                        <!--This links sends to each page of the site.-->
+                        <li class="col-sm-3 text-center">
+                            <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Models.html"><span class="glyphicon glyphicon-search"></span> Models</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span> Gallery</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Company.html"><span class="glyphicon glyphicon-user"></span> Company</a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <!--This is Main tag which it contains all individual information about the Home page.-->
@@ -55,55 +62,52 @@
     <main>
         <!--This is navigation with all news in company. It contains pictures and text.-->
         <!--Here we use bootstrap classes to add functionality.-->
-        <div class="row navigation">
-            <!--This is a list of all news in company.-->
-            <ul class="nav navbar-nav">
-                <li><a href="#section1">1. Our new models</a></li>
-                <li><a href="#section2">2. Electric inovation</a></li>
-                <li><a href="#section3">3. Upcoming event</a></li>
-            </ul>
-        </div>
-        <!--This div with ID "section1" contains first news-->
-        <div id="section1" class="container-fluid">
-            <div class="row">
-                <!--Pictures of all new cars.-->
-                <h1>New models:</h1>
-                <img class="col-sm-4 info-2" src="images/newandoldmodels/2new.png" alt="2">
-                <img class="col-sm-4 info-2" src="images/newandoldmodels/1new.png" alt="1">
-                <img class="col-sm-4 info-2" src="images/newandoldmodels/3new.png" alt="3">
+        <div class="news-navigation">
+            <div class="row navigation">
+                <!--This is a list of all news in company.-->
+                <p class="news">NEWS:</p>
+                <ul class="nav navbar-nav">
+                    <li><a href="#section1">1. Our new models</a></li>
+                    <li><a href="#section2">2. Electric inovation</a></li>
+                    <li><a href="#section3">3. Upcoming event</a></li>
+                </ul>
             </div>
-            <div class="row">
-                <p class="col-sm-4">
-                    The model JS
-                </p>
-                <p class="col-sm-4">
-                    The model Angular
-                </p>
-                <p class="col-sm-4">
-                    The model SQL
-                </p>
+            <!--This div with ID "section1" contains first news-->
+            <div id="section1" class="container-fluid">
+                <div class="row">
+                    <div class="new-cars-list">
+                        <!--Pictures of all new cars.-->
+                        <div class="col-sm-4 newmodel1">
+                            <img src="images/newandoldmodels/2new.png" alt="2">
+                        </div>
+                        <div class="col-sm-4 newmodel2">
+                            <img src="images/newandoldmodels/1new.png" alt="1">
+                        </div>
+                        <div class="col-sm-4 newmodel3">
+                            <img src="images/newandoldmodels/3new.png" alt="3">
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <!--This div with ID "section2" contains contains the second news.-->
-        <div id="section2" class="container-fluid">
-            <div class="row">
-                <h1>Looking to the future</h1>
-                <img class="col-sm-4" src="images/newandoldmodels/electriccar.png" alt="2">
-                <p class="col-sm-8">
-                    We know that the future is in renewable sources, and we want to develop in this direction. Our engineers years to develop new technologies that create an incredible electric car at a reasonable price. And now we are ready to present our electric car model
-                    "Etron" on auto show.
-                </p>
+            <!--This div with ID "section2" contains the second news.-->
+            <div id="section2" class="container-fluid">
+                <div class="row">
+                    <div class="electric-car">
+                        <img src="images/newandoldmodels/electriccar.png" alt="2">
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--This div with ID "section3" contains contains the last news for upcoming event.-->
-        <div id="section3" class="container-fluid">
-            <div class="row">
-                <h1>Company history</h1>
-                <img class="col-sm-2" src="images/newandoldmodels/2old.png" alt="2">
-                <img class="col-sm-2 img-circle" " src="images/newandoldmodels/olds.jpg " alt="2 ">
-                <p class="col-sm-4 ">
-                    This month is about one of the most long awaited events Motor Show of "SUV motors ". Will bring together old classic cars and current models of the company. Everyone will have the opportunity to meet the company's history.
-                </p>
+            <!--This div with ID "section3" contains the last news for upcoming event.-->
+            <div id="section3" class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 event-show">
+                        <img src="images/newandoldmodels/2old.png" alt="2">
+                    </div>
+                    <div class="col-sm-6 event-show">
+                        <img class="img-circle" src="images/newandoldmodels/olds.jpg" alt="2">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -113,7 +117,7 @@
         <div class="row mainfooter">
             <!--This link sends to github profile of creator.-->
             <div class="col-sm-3">
-                <a id="github" href="https://github.com/Mihaildimitrov/Website-Official-cars-store ">
+                <a id="github" href="https://github.com/Mihaildimitrov/Website-Official-cars-store">
                     <p>Link to github repository</p>
                 </a>
             </div>

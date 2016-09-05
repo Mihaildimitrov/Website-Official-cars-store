@@ -21,40 +21,48 @@
 <!--Here we use bootstrap classes to add functionality.-->
 
 <body>
-
     <!--This is header tag, it is the same for each page.-->
-    <header id="header">
-        <nav class="navbar navbar-fixed-top">
-            <ul class="row">
-                <!--This is a list of all the pages of the application.-->
-                <li id="logo" class="col-xs-2">
-                    <img src="images/logo.png" alt="Our logo">
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div id="logo-section">
+                    <div id="logo-wrapper">
+                        <img src="images/logo.png" alt="Our logo">
+                    </div>
                     <p>SUV Motors</p>
-                </li>
-                <!--This links sends to each page of the site.-->
-                <li class="col-xs-2 menu">
-                    <a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Models.html"><span class="glyphicon glyphicon-search"></span>Models</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span>Gallery</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Company.html"><span class="glyphicon glyphicon-user"></span>Company</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span>Contact</a>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <nav>
+                    <!--This is a list of all the pages of the application.-->
+                    <ul class="row header-navigation">
+                        <!--This links sends to each page of the site.-->
+                        <li class="col-sm-3 text-center">
+                            <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Models.html"><span class="glyphicon glyphicon-search"></span> Models</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span> Gallery</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Company.html"><span class="glyphicon glyphicon-user"></span> Company</a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <!--This is Main tag which it contains all individual information about the Gallery page.-->
-    <main>
+    <!--This is Main tag which it contains all individual information about the Home page.-->
+
+    <main class="container">
         <!--Here we use bootstrap classes to add functionality(Slider-Carousel).-->
-        <div id="slider-one" class="container">
+        <div id="slider-one">
             <div id="myCarousel" class="carousel slide">
                 <!--Here list indicators for each picture in slider.-->
                 <ol class="carousel-indicators">
@@ -138,7 +146,7 @@
         <div class="row mainfooter">
             <!--This link sends to github profile of creator.-->
             <div class="col-sm-3">
-                <a id="github" href="https://github.com/Mihaildimitrov/Website-Official-cars-store ">
+                <a id="github" href="https://github.com/Mihaildimitrov/Website-Official-cars-store">
                     <p>Link to github repository</p>
                 </a>
             </div>

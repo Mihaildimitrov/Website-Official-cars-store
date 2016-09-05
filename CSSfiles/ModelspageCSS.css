@@ -4,143 +4,136 @@ main {
     width: 100%;
 }
 
-#firstsection {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#secondsection {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#thirdsection {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#model-1 {
-    background-image: url(Pictures/roadmodel1.jpg);
-    background-repeat: no-repeat;
+.company-models .firstthreemodels {
+    background-image: url(Pictures/companymodels1.jpg);
     background-size: 100% 100%;
-}
-
-#model-1 img {
-    width: 42%;
-    height: 42%;
-    margin: 3%;
-}
-
-#model-1 h1 {
-    padding-top: 5%;
-    margin-left: 30%;
-    font-family: Papyrus, fantasy;
-    color: black;
-    font-size: 3.0em;
-    margin-bottom: 20%;
-}
-
-#model-2 {
-    background-image: url(Pictures/roadmodel2.jpg);
+    background-position: 70%;
     background-repeat: no-repeat;
+}
+
+.company-models .secondthreemodels {
+    background-image: url(Pictures/companymodels22.jpg);
     background-size: 100% 100%;
+    background-position: 70%;
+    background-repeat: no-repeat
 }
 
-#model-2 img {
-    width: 42%;
-    height: 42%;
-    margin: 3%;
+.company-models .firstthreemodels img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-#model-2 h1 {
-    padding-top: 5%;
-    margin-left: 30%;
-    font-family: Papyrus, fantasy;
-    color: black;
-    font-size: 3.0em;
-    margin-bottom: 20%;
+.company-models .firstthreemodels .model-1,
+.model-2,
+.model-3 {
+    overflow: hidden;
+    width: 33%;
+    height: 33%;
+    margin: 0;
+    margin-top: 30%;
+    margin-bottom: 5%;
+    display: inline-block;
 }
 
-#model-3 {
-    background-image: url(Pictures/roadmodel3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.company-models .secondthreemodels img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-#model-3 img {
-    width: 42%;
-    height: 42%;
-    margin: 3%;
+.company-models .secondthreemodels .model-4,
+.model-5,
+.model-6 {
+    overflow: hidden;
+    width: 33%;
+    height: 33%;
+    margin: 0;
+    margin-bottom: 1%;
+    margin-top: 30%;
+    display: inline-block;
 }
 
-#model-3 h1 {
-    padding-top: 5%;
-    margin-left: 30%;
-    font-family: Papyrus, fantasy;
-    color: black;
-    font-size: 3.0em;
-    margin-bottom: 20%;
+.company-models button {
+    margin: 0;
+    padding: 0;
+    border-radius: 8px 8px 8px 8px;
 }
 
-#model-4 {
-    background-image: url(Pictures/roadmodel4.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.company-models .model1-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #2C2C24;
+    border-color: #2C2C24;
+    font-size: 1.5em;
+    margin-left: 16%;
 }
 
-#model-4 img {
-    width: 42%;
-    height: 42%;
-    margin: 3%;
-}
-
-#model-4 h1 {
-    padding-top: 5%;
+.company-models .model2-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #2C2C24;
+    border-color: #2C2C24;
+    font-size: 1.5em;
     margin-left: 20%;
-    font-family: Papyrus, fantasy;
-    color: black;
-    font-size: 3.0em;
-    margin-bottom: 20%;
 }
 
-#model-5 {
-    background-image: url(Pictures/roadmodel2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.company-models .model3-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #2C2C24;
+    border-color: #2C2C24;
+    font-size: 1.5em;
+    margin-left: 20%;
 }
 
-#model-5 img {
-    width: 42%;
-    height: 42%;
-    margin: 3%;
+.company-models .model4-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #939084;
+    border-color: #939084;
+    font-size: 1.5em;
+    margin-left: 20%;
 }
 
-#model-5 h1 {
-    padding-top: 5%;
-    margin-left: 30%;
-    font-family: Papyrus, fantasy;
-    color: black;
-    font-size: 3.0em;
-    margin-bottom: 20%;
+.company-models .model5-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #939084;
+    border-color: #939084;
+    font-size: 1.5em;
+    margin-left: 20%;
 }
 
-#model-6 {
-    background-image: url(Pictures/roadmodel6.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.company-models .model6-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #939084;
+    border-color: #939084;
+    font-size: 1.5em;
+    margin-left: 20%;
 }
 
-#model-6 img {
-    width: 42%;
-    height: 42%;
-    margin: 3%;
+.company-models .model1-info:hover {
+    color: red;
 }
 
-#model-6 h1 {
-    padding-top: 5%;
-    margin-left: 30%;
-    font-family: Papyrus, fantasy;
-    color: black;
-    font-size: 3.0em;
-    margin-bottom: 20%;
+.company-models .model2-info:hover {
+    color: red;
+}
+
+.company-models .model3-info:hover {
+    color: red;
+}
+
+.company-models .model4-info:hover {
+    color: red;
+}
+
+.company-models .model5-info:hover {
+    color: red;
+}
+
+.company-models .model6-info:hover {
+    color: red;
 }

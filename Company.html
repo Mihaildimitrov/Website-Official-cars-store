@@ -19,68 +19,145 @@
 <!--This is body tag which is contains all information about Company page.-->
 
 <body>
-
     <!--This is header tag, it is the same for each page.-->
-    <header id="header">
-        <nav class="navbar navbar-fixed-top">
-            <ul class="row">
-                <!--This is a list of all the pages of the application.-->
-                <li id="logo" class="col-xs-2">
-                    <img src="images/logo.png" alt="Our logo">
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div id="logo-section">
+                    <div id="logo-wrapper">
+                        <img src="images/logo.png" alt="Our logo">
+                    </div>
                     <p>SUV Motors</p>
-                </li>
-                <!--This links sends to each page of the site.-->
-                <li class="col-xs-2 menu">
-                    <a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Models.html"><span class="glyphicon glyphicon-search"></span>Models</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span>Gallery</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Company.html"><span class="glyphicon glyphicon-user"></span>Company</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span>Contact</a>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <nav>
+                    <!--This is a list of all the pages of the application.-->
+                    <ul class="row header-navigation">
+                        <!--This links sends to each page of the site.-->
+                        <li class="col-sm-3 text-center">
+                            <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Models.html"><span class="glyphicon glyphicon-search"></span> Models</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span> Gallery</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Company.html"><span class="glyphicon glyphicon-user"></span> Company</a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <!--This is Main tag which it contains all individual information about the Company page.-->
+    <!--This is Main tag which it contains all individual information about the Home page.-->
 
-    <main>
-        <!--This div tags with ID "news-1" and ID "news-2" contains more information about company projects.-->
-        <div id="news-1" class="row">
-            <div id="firstinfo" class="col-xs-6">
-                <h1>The new RS Spyder V12</h1>
+    <main class="container-fluid company-history">
+        <!-- This section with class "picture-info" contains four divs with information for new products of company-->
+        <section class="row picture-info">
+            <!-- This div contains information for new sport car of company -->
+            <div class="row row-1">
+                <!-- This div contains picture -->
+                <div class="col-sm-5 info1-element">
+                    <div class="info1-pic">
+                        <img src="CSSfiles/Pictures/sportcar.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-7 info1-text">
+                    <!--This 'h1' tag contains the title of text in 'p' tag -->
+                    <h1>RS Spyder V12 873hp.</h1>
+                    <!-- THis 'p' tag contains more information about new car of company -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eius velit numquam nemo esse, aut quos, illum voluptates magni. Facere perferendis pariatur, voluptates repudiandae quibusdam deserunt saepe inventore tenetur eos. Voluptates voluptate nihil
+                        adipisci, nesciunt recusandae quasi repudiandae aspernatur. Quasi ad modi recusandae culpa deserunt ratione rem ut illum, cumque.
+                    </p>
+                </div>
             </div>
-            <div id="secondinfo" class="col-xs-6">
-                <h1>Matrix LED headlights</h1>
+            <!-- This div contains information for new LED headlights technology of company -->
+            <div class="row">
+                <div class="col-sm-7 info2-text">
+                    <!--This 'h1' tag contains the title of text in 'p' tag -->
+                    <h1>New Matrix LED technology</h1>
+                    <!-- THis 'p' tag contains more information about new headlights technology of company -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eius velit numquam nemo esse, aut quos, illum voluptates magni. Facere perferendis pariatur, voluptates repudiandae quibusdam deserunt saepe inventore tenetur eos. Voluptates voluptate nihil
+                        adipisci, nesciunt recusandae quasi repudiandae aspernatur. Quasi ad modi recusandae culpa deserunt ratione rem ut illum, cumque.
+                    </p>
+                </div>
+                <!-- This div contains picture -->
+                <div class="col-sm-5 info1-element">
+                    <div class="info2-pic">
+                        <img src="CSSfiles/Pictures/LEDHeadlights.jpg" alt="">
+                    </div>
+                </div>
             </div>
-        </div>
+            <!-- This div contains information for new factory of company -->
+            <div class="row row-1">
+                <!-- This div contains picture -->
+                <div class="col-sm-5 info1-element">
+                    <div class="info3-pic">
+                        <img src="CSSfiles/Pictures/factory.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-7 info3-text">
+                    <!--This 'h1' tag contains the title of text in 'p' tag -->
+                    <h1>We open the new factory of company</h1>
+                    <!-- THis 'p' tag contains more information about new factory of company -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eius velit numquam nemo esse, aut quos, illum voluptates magni. Facere perferendis pariatur, voluptates repudiandae quibusdam deserunt saepe inventore tenetur eos. Voluptates voluptate nihil
+                        adipisci, nesciunt recusandae quasi repudiandae aspernatur. Quasi ad modi recusandae culpa deserunt ratione rem ut illum, cumque.
+                    </p>
+                </div>
+            </div>
+            <!-- This div contains information for new electric car of company -->
+            <div class="row">
+                <div class="col-sm-7 info4-text">
+                    <!--This 'h1' tag contains the title of text in 'p' tag -->
+                    <h1>Now we produced our first electric car</h1>
+                    <!-- THis 'p' tag contains more information about new electric car of company -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus eius velit numquam nemo esse, aut quos, illum voluptates magni. Facere perferendis pariatur, voluptates repudiandae quibusdam deserunt saepe inventore tenetur eos. Voluptates voluptate nihil
+                        adipisci, nesciunt recusandae quasi repudiandae aspernatur. Quasi ad modi recusandae culpa deserunt ratione rem ut illum, cumque.
+                    </p>
+                </div>
+                <!-- This div contains picture -->
+                <div class="col-sm-5 info1-element">
+                    <div class="info4-pic">
+                        <img src="CSSfiles/Pictures/electriccar.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div id="news-2" class="row">
-            <div id="thirdinfo" class="col-xs-6">
-                <h1>The new factory</h1>
+        <!-- This section with class "history-section" contains information about company history-->
+        <section class="row history-section">
+            <div class="row title-history">
+                <div class="col-sm-12">
+                    <h1>The future belongs to those who have a great history!</h1>
+                </div>
             </div>
-            <div id="fourthinfo" class="col-xs-6">
-                <h1>Electric cars.</h1>
+            <div class="row">
+                <!-- This divs contains picture -->
+                <div class="col-sm-7 history-info">
+                    <div class="history-pic">
+                        <img src="CSSfiles/Pictures/historypic.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <!-- THis 'p' tag contains more information about company history -->
+                    <p>
+                        As a company, we’re proud of our role in the global economies creating thousands of jobs while pursuing automotive excellence in the world. With a deep commitment to our founding principles, SUV will remain at the forefront of the luxury automotive industry
+                        for years to come.
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <p id="line"> </p>
-        <!--This div tags with ID "history-1" and "history-2" contains more information about company history.-->
-        <div id="history-1" class="row">
-            <h1>The future belongs to those who have a great history!</h1>
-        </div>
-        <div id="history-2" class="row">
-            <h1 class="col-xs-3">About company:</h1>
-            <div class="col-xs-9">As a company, we’re proud of our role in the global economies creating thousands of jobs while pursuing automotive excellence in the world. With a deep commitment to our founding principles, SUV will remain at the forefront of the luxury automotive
-                industry for years to come.</div>
-        </div>
+        </section>
     </main>
 
 

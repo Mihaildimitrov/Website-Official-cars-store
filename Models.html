@@ -21,88 +21,88 @@
 
 <body>
     <!--This is header tag, it is the same for each page.-->
-    <header id="header">
-        <nav class="navbar navbar-fixed-top">
-            <ul class="row">
-                <!--This is a list of all the pages of the application.-->
-                <li id="logo" class="col-xs-2">
-                    <img src="images/logo.png" alt="Our logo">
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div id="logo-section">
+                    <div id="logo-wrapper">
+                        <img src="images/logo.png" alt="Our logo">
+                    </div>
                     <p>SUV Motors</p>
-                </li>
-                <!--This links sends to each page of the site.-->
-                <li class="col-xs-2 menu">
-                    <a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Models.html"><span class="glyphicon glyphicon-search"></span>Models</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span>Gallery</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Company.html"><span class="glyphicon glyphicon-user"></span>Company</a>
-                </li>
-                <li class="col-xs-2 menu">
-                    <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span>Contact</a>
-                </li>
-            </ul>
-        </nav>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <nav>
+                    <ul class="row header-navigation">
+                        <!--This is a list of all the pages of the application.-->
+                        <!--This links sends to each page of the site.-->
+                        <li class="col-sm-3 text-center">
+                            <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Models.html"><span class="glyphicon glyphicon-search"></span> Models</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span> Gallery</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Company.html"><span class="glyphicon glyphicon-user"></span> Company</a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <!--This is Main tag which it contains all individual information about the models page.-->
+    <!--This is Main tag which it contains all individual information about the Home page.-->
 
-    <main>
-        <!--This section tag contains two model cars from all. -->
-        <section id="firstsection" class="row">
-            <!--This is first model whitn name "PHP".-->
-            <article id="model-1" class="col-xs-6">
-                <h1>PHP 4.2 V6 Turbo</h1>
-                <img id="pic1-1" src="images/firstmodel/10pic.png" alt="car">
-                <img id="pic1-2" src="images/firstmodel/13pic.png" alt="car">
-                <img id="pic1-3" src="images/firstmodel/14pic.png" alt="car">
-                <img id="pic1-4" src="images/firstmodel/16pic.png" alt="car">
-            </article>
-            <article id="model-2" class="col-xs-6">
-                <h1>Python V12 4X4</h1>
-                <img id="pic2-1" src="images/secondmodel/20pic.png" alt="car">
-                <img id="pic2-2" src="images/secondmodel/21pic.png" alt="car">
-                <img id="pic2-4" src="images/secondmodel/23pic.png" alt="car">
-                <img id="pic2-6" src="images/secondmodel/25pic.png" alt="car">
-            </article>
+    <main class="container-fluid company-models">
+        <section class="row">
+            <div class="col-sm-12 firstthreemodels">
+                <div class="model-1">
+                    <div class="model1-pic">
+                        <img id="pic1-1" src="images/firstmodel/10pic.png" alt="car">
+                        <button class="model1-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                    </div>
+                </div>
+                <div class="model-2">
+                    <div class="model2-pic">
+                        <img id="pic2-1" src="images/secondmodel/20pic.png" alt="car">
+                        <button class="model2-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                    </div>
+                </div>
+                <div class="model-3">
+                    <div class="mdoel3-pic">
+                        <img id="pic3-2" src="images/thirdmodel/31pic.png" alt="car">
+                        <button class="model3-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!--This section tag contains two model cars from all. -->
-        <section id="secondsection" class="row">
-            <article id="model-3" class="col-xs-6">
-                <h1>RUBY V6 TDI</h1>
-                <img id="pic3-2" src="images/thirdmodel/31pic.png" alt="car">
-                <img id="pic3-3" src="images/thirdmodel/32pic.png" alt="car">
-                <img id="pic3-5" src="images/thirdmodel/34pic.png" alt="car">
-                <img id="pic3-6" src="images/thirdmodel/35pic.png" alt="car">
-            </article>
-            <article id="model-4" class="col-xs-6">
-                <h1>JAVA V12 Turbo 756hp</h1>
-                <img id="pic4-1" src="images/fourthmodel/40pic.png" alt="car">
-                <img id="pic4-2" src="images/fourthmodel/41pic.png" alt="car">
-                <img id="pic4-5" src="images/fourthmodel/44pic.png" alt="car">
-                <img id="pic4-6" src="images/fourthmodel/45pic.png" alt="car">
-            </article>
-            <!--This section tag contains two model cars from all. -->
-        </section>
-        <section id="thirdsection" class="row">
-            <article id="model-5" class="col-xs-6">
-                <h1>C++ V10 SPORT</h1>
-                <img id="pic5-1" src="images/fifthmodel/50pic.png" alt="car">
-                <img id="pic5-2" src="images/fifthmodel/51pic.png" alt="car">
-                <img id="pic5-5" src="images/fifthmodel/54pic.png" alt="car">
-                <img id="pic5-6" src="images/fifthmodel/55pic.png" alt="car">
-            </article>
-            <article id="model-6" class="col-xs-6">
-                <h1>C# V6 TURBO</h1>
-                <img id="pic6-2" src="images/sixthmodel/61pic.png" alt="car">
-                <img id="pic6-3" src="images/sixthmodel/62pic.png" alt="car">
-                <img id="pic6-4" src="images/sixthmodel/63pic.png" alt="car">
-                <img id="pic6-5" src="images/sixthmodel/64pic.png" alt="car">
-            </article>
+        <section class="row secondthreemodels">
+            <div class="col-sm-12">
+                <div class="model-4">
+                    <div class="model4-pic">
+                        <img id="pic4-2" src="images/fourthmodel/41pic.png" alt="car">
+                        <button class="model4-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                    </div>
+                </div>
+                <div class="model-5">
+                    <div class="model5-pic">
+                        <img id="pic5-1" src="images/fifthmodel/50pic.png" alt="car">
+                        <button class="model5-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                    </div>
+                </div>
+                <div class="model-6">
+                    <div class="mdoel6-pic">
+                        <img id="pic6-2" src="images/sixthmodel/61pic.png" alt="car">
+                        <button class="model6-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
