@@ -1,7 +1,33 @@
-main {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+.company-models #row1-models {
+    display: block;
+}
+
+.company-models #row2-models {
+    display: block;
+}
+
+#model1 {
+    display: none;
+}
+
+.company-models #model2 {
+    display: none;
+}
+
+.company-models #model3 {
+    display: none;
+}
+
+.company-models #model4 {
+    display: none;
+}
+
+.company-models #model5 {
+    display: none;
+}
+
+.company-models #model6 {
+    display: none;
 }
 
 .company-models .firstthreemodels {

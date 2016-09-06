@@ -1,15 +1,58 @@
-main {
-    margin-top: 0px;
-    margin-bottom: 0px;
+body {
+    background-color: #727272;
 }
+
+
+/* Here stylize close icon and title.*/
+
+.PHP-model .close-picture {
+    overflow: hidden;
+    width: 30%;
+    height: 30%;
+    margin-left: 70%;
+}
+
+.PHP-model .close-picture img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.PHP-model .title h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: Papyrus, fantasy;
+    color: white;
+    font-size: 3em;
+    font-style: italic;
+}
+
+
+/*====== CSS for table information ===================================== */
+
+.PHP-model table {
+    margin-top: 10%;
+}
+
+.PHP-model table td {
+    width: 3%;
+    font-family: Papyrus, fantasy;
+    color: white;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+
+/*====== CSS for slider ===================================== */
 
 
 /* Here stylize conted in main tag.*/
 
 .container {
     width: 100%;
-    height: 10%;
-    margin: 0;
+    margin: 0 0 2% 2%;
+    border-radius: 10px 10px 10px 10px;
     position: relative;
     background-image: url(Pictures/road.jpg);
     background-size: 100% 100%;
@@ -21,8 +64,7 @@ main {
 
 .container .picture-container {
     overflow: hidden;
-    width: 65%;
-    height: 30%;
+    width: 100%;
     margin: 0 auto;
 }
 
