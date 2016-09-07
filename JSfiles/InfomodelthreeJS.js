@@ -4,7 +4,7 @@ var imagecount = 1;
 var totalImage = 4;
 
 
-// This function with name "pictureSlider" change the picture in slider if the buttons are clicked.
+// This function with name "pictureSlider3" change the picture in slider if the buttons are clicked.
 function pictureSlider3(number) {
     // In this variable save selected element from DOM.
     var image = document.getElementById('picture3');

@@ -26,14 +26,12 @@ function replacementSectionContent(elementID) {
 
     // Selected some element from main section element and save in variable.
     var titleModel = document.getElementById('titleModel');
-    var closeIcon = document.getElementById('closeIcon');
     var startPicture = document.getElementById('startPicture');
     var leftButton = document.getElementById('leftButton');
     var rightButton = document.getElementById('rightButton');
 
     // Change content in this elements.
     titleModel.innerHTML = selectedSection.title;
-    closeIcon.innerHTML = selectedSection.closeIcon;
     startPicture.innerHTML = selectedSection.startPicture;
     leftButton.innerHTML = selectedSection.leftButton;
     rightButton.innerHTML = selectedSection.rightButton;
