@@ -20,7 +20,7 @@
 
 <!-- This is body tag which is contains all information about Models page. -->
 
-<body id="body-tag">
+<body>
     <!-- This is header tag, it is the same for each page. -->
     <header id="header" class="container-fluid">
         <div class="row">
@@ -59,7 +59,6 @@
     </header>
 
     <!-- This is Main tag which it contains all individual information about the Home page. -->
-
     <main id="main-tag" class="container-fluid company-models">
         <!-- This section with class "firstthreemodels" contains list of three divs with car models. -->
         <section id="row1-models" class="row">
@@ -68,21 +67,21 @@
                 <div class="model-1">
                     <div class="model1-pic">
                         <img id="pic1-1" src="images/firstmodel/car1.1.png" alt="car">
-                        <button id="1" onclick="selectedModel(event)" class="model1-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="1" onclick="displayModel(event)" class="model1-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
                 <!-- This div contains image of car and button for more information. -->
                 <div class="model-2">
                     <div class="model2-pic">
                         <img id="pic2-1" src="images/secondmodel/car2.1.png" alt="car">
-                        <button id="2" onclick="selectedModel(event)" class="model2-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="2" onclick="displayModel(event)" class="model2-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
                 <!-- This div contains image of car and button for more information. -->
                 <div class="model-3">
                     <div class="mdoel3-pic">
                         <img id="pic3-2" src="images/thirdmodel/car3.1.png" alt="car">
-                        <button id="3" onclick="selectedModel(event)" class="model3-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="3" onclick="displayModel(event)" class="model3-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
             </div>
@@ -94,29 +93,28 @@
                 <div class="model-4">
                     <div class="model4-pic">
                         <img id="pic4-2" src="images/fourthmodel/car4.1.png" alt="car">
-                        <button id="4" onclick="selectedModel(event)" class="model4-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="4" onclick="displayModel(event)" class="model4-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
                 <!-- This div contains image of car and button for more information. -->
                 <div class="model-5">
                     <div class="model5-pic">
                         <img id="pic5-1" src="images/fifthmodel/car5.1.png" alt="car">
-                        <button id="5" onclick="selectedModel(event)" class="model5-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="5" onclick="displayModel(event)" class="model5-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
                 <!-- This div contains image of car and button for more information. -->
                 <div class="model-6">
                     <div class="mdoel6-pic">
                         <img id="pic6-2" src="images/sixthmodel/car6.1.png" alt="car">
-                        <button id="6" onclick="selectedModel(event)" class="model6-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="6" onclick="displayModel(event)" class="model6-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="template-wrapper">
-            <!-- Template ID. -->
-            <section id="mainSection">
+        <div id="template-wrapper">
+            <section id="model-information">
                 <section id="PHPmodel" class="row PHP-model">
                     <div class="row">
                         <!-- This div contains title. -->
@@ -135,7 +133,7 @@
 
                     <div class="row">
                         <!-- This div contains slider. -->
-                        <div class="col-sm-7">
+                        <div id="slidermini" class="col-sm-7">
                             <div class="container">
                                 <!-- This div with class "picture-container" contains picture template for slider. -->
                                 <!-- Template first picture for slider. -->
@@ -220,7 +218,7 @@
                     </div>
                 </section>
             </section>
-        </section>
+        </div>
     </main>
 
     <!-- This is footer tag, it is the same for each page. -->

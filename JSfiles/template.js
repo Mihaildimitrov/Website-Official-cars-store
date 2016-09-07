@@ -5,10 +5,8 @@
 var template = {
     // Template if choose car with ID 1.
     1: {
-        // This is ID for element
-        mainSection: 'model1',
         // This html img elements with function for current car.
-        closeIcon: '<img onclick="closeInfo1()" id="closeButton" src="images/closeicon.png" alt="button">',
+        closeIcon: '<img onclick="closeInfo()" id="closeButton" src="images/closeicon.png" alt="button">',
         startPicture: '<img id="picture1" src="images/firstmodel/car1.1.png" alt="car">',
         leftButton: '<img onclick="pictureSlider1(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
         rightButton: '<img onclick="pictureSlider1(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
@@ -17,10 +15,8 @@ var template = {
     },
     // Template if choose car with ID 2.
     2: {
-        // This is ID for element
-        mainSection: 'model2',
         // This html img elements with function for current car.
-        closeIcon: '<img onclick="closeInfo2()" id="closeButton" src="images/closeicon.png" alt="button">',
+        closeIcon: '<img onclick="closeInfo()" id="closeButton" src="images/closeicon.png" alt="button">',
         startPicture: '<img id="picture2" src="images/secondmodel/car2.1.png" alt="car">',
         leftButton: '<img onclick="pictureSlider2(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
         rightButton: '<img onclick="pictureSlider2(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
@@ -29,10 +25,8 @@ var template = {
     },
     // Template if choose car with ID 3.
     3: {
-        // This is ID for element
-        mainSection: 'model3',
         // This html img elements with function for current car.
-        closeIcon: '<img onclick="closeInfo3()" id="closeButton" src="images/closeicon.png" alt="button">',
+        closeIcon: '<img onclick="closeInfo()" id="closeButton" src="images/closeicon.png" alt="button">',
         startPicture: '<img id="picture3" src="images/thirdmodel/car3.1.png" alt="car">',
         leftButton: '<img onclick="pictureSlider3(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
         rightButton: '<img onclick="pictureSlider3(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
@@ -41,10 +35,8 @@ var template = {
     },
     // Template if choose car with ID 4.
     4: {
-        // This is ID for element
-        mainSection: 'model4',
         // This html img elements with function for current car.
-        closeIcon: '<img onclick="closeInfo4()" id="closeButton" src="images/closeicon.png" alt="button">',
+        closeIcon: '<img onclick="closeInfo()" id="closeButton" src="images/closeicon.png" alt="button">',
         startPicture: '<img id="picture4" src="images/fourthmodel/car4.1.png" alt="car">',
         leftButton: '<img onclick="pictureSlider4(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
         rightButton: '<img onclick="pictureSlider4(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
@@ -53,10 +45,8 @@ var template = {
     },
     // Template if choose car with ID 5.
     5: {
-        // This is ID for element
-        mainSection: 'model5',
         // This html img elements with function for current car.
-        closeIcon: '<img onclick="closeInfo5()" id="closeButton" src="images/closeicon.png" alt="button">',
+        closeIcon: '<img onclick="closeInfo()" id="closeButton" src="images/closeicon.png" alt="button">',
         startPicture: '<img id="picture5" src="images/fifthmodel/car5.1.png" alt="car">',
         leftButton: '<img onclick="pictureSlider5(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
         rightButton: '<img onclick="pictureSlider5(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
@@ -65,10 +55,8 @@ var template = {
     },
     // Template if choose car with ID 6.
     6: {
-        // This is ID for element
-        mainSection: 'model6',
         // This html img elements with function for current car.
-        closeIcon: '<img onclick="closeInfo6()" id="closeButton" src="images/closeicon.png" alt="button">',
+        closeIcon: '<img onclick="closeInfo()" id="closeButton" src="images/closeicon.png" alt="button">',
         startPicture: '<img id="picture6" src="images/sixthmodel/car6.1.png" alt="car">',
         leftButton: '<img onclick="pictureSlider6(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
         rightButton: '<img onclick="pictureSlider6(1)" id="rightButton" src="images/rightarrow.png" alt="button">',

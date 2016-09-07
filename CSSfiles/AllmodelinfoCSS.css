@@ -1,5 +1,23 @@
-body {
-    background-color: #727272;
+#template-wrapper {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+    display: block!important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#model-information {
+    height: 80%!important;
+    width: 80%;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px 10px 10px 10px;
 }
 
 
@@ -9,7 +27,7 @@ body {
     overflow: hidden;
     width: 30%;
     height: 30%;
-    margin-left: 70%;
+    margin-left: 60%;
 }
 
 .PHP-model .close-picture img {

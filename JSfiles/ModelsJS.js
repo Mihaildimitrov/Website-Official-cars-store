@@ -1,41 +1,20 @@
 // Select the wrapper element.     
-var mainWrapper = document.getElementById("template-wrapper");
-// In this variable save id of current element.
-var secondWrap = '';
+var wrapper = document.getElementById("template-wrapper");
 
-function selectedModel(event) {
-    // Save in variable element with ID "row1-models".
-    var firstSectionFromMainTag = document.getElementById('row1-models');
-    // Save in variable element with ID "row2-models".
-    var secondSectionFromMainTag = document.getElementById('row2-models');
-    // Get the current id of element, and save in variable.
+function displayModel(event) {
+    // Get the current id and save in variable.
     var id = event.target.attributes.id.value;
+    currentElementID = id;
+
+    // Check if the element does not this class it added.
+    // -1 becouse if class does not exist show -1.
+    if (wrapper.classList.value.indexOf("modal") == -1) {
+        wrapper.classList += "modal";
+    }
     // Call this function and change some HTML elements. 
     replacementSectionContent(id);
     // Call this function and change fields in table.
     replacementModelInfo(id);
-
-    // Save in variable element with ID "template-wrapper".
-    var modelInfo = document.getElementById('template-wrapper');
-    var secondWrapper = document.getElementById(secondWrap);
-    // Save in variable element with ID "main-tag".
-    var mainElement = document.getElementById('main-tag');
-
-    // Change style options:
-    // Hide this element.
-    firstSectionFromMainTag.style.display = "none";
-    // Hide this element.
-    secondSectionFromMainTag.style.display = "none";
-    // Show this elements.
-    modelInfo.style.display = "block";
-    secondWrapper.style.display = "block";
-
-    // Change width, height, backgroundColor, borderRadius and margin.
-    mainElement.style.width = "85%";
-    mainElement.style.height = "85%";
-    mainElement.style.borderRadius = "10px 10px 10px 10px";
-    mainElement.style.margin = "1% auto";
-    mainElement.style.backgroundColor = "#525252";
 }
 
 
@@ -46,7 +25,6 @@ function replacementSectionContent(elementID) {
     var selectedSection = template[elementID];
 
     // Selected some element from main section element and save in variable.
-    var mainSection = document.getElementById('mainSection');
     var titleModel = document.getElementById('titleModel');
     var closeIcon = document.getElementById('closeIcon');
     var startPicture = document.getElementById('startPicture');
@@ -54,8 +32,6 @@ function replacementSectionContent(elementID) {
     var rightButton = document.getElementById('rightButton');
 
     // Change content in this elements.
-    mainSection.id = selectedSection.mainSection;
-    secondWrap = mainSection.id;
     titleModel.innerHTML = selectedSection.title;
     closeIcon.innerHTML = selectedSection.closeIcon;
     startPicture.innerHTML = selectedSection.startPicture;
@@ -95,4 +71,24 @@ function replacementModelInfo(elementID) {
     gears.innerHTML = selectedModel.gears;
     consumption.innerHTML = selectedModel.consumption;
     emission.innerHTML = selectedModel.emission;
+}
+
+// Function for close window information .
+function closeInfo() {
+
+    // Save in variable element with ID "main-tag".
+    var mainElement = document.getElementById('main-tag');
+
+    var templateElement = document.getElementById('template-wrapper');
+
+    // Change style options:
+
+    // Change width, height, backgroundColor, borderRadius and margin.
+    mainElement.style.width = "auto";
+    mainElement.style.height = "auto";
+    mainElement.style.borderRadius = "0";
+    mainElement.style.margin = "0";
+    mainElement.style.backgroundColor = "transparent";
+
+    templateElement.classList.value = "";
 }
