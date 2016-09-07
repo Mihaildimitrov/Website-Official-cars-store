@@ -3,6 +3,9 @@ main {
     padding: 0;
 }
 
+
+/* Here stylize first element in main tag. */
+
 .contact-info #firstsection {
     width: 100%;
     height: 100%;
@@ -12,11 +15,17 @@ main {
     background-repeat: no-repeat;
 }
 
+
+/* Here stylize every "h1" element(PHone, address, Email). */
+
 .contact-info #firstsection h1 {
     margin-top: 0;
     padding-top: 30%;
     padding-bottom: 20%;
 }
+
+
+/* Here stylize second section element in main tag which is contains contact imformation. */
 
 .contact-info #secondsection {
     width: 100%;

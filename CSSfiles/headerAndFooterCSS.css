@@ -1,4 +1,4 @@
-/*CSS for header --> */
+/* CSS for header */
 
 body {
     margin: 0;
@@ -9,6 +9,9 @@ body {
 #header {
     background-color: #505050;
 }
+
+
+/* Here stylize logo picture. */
 
 #logo-wrapper {
     overflow: hidden;
@@ -24,6 +27,9 @@ body {
     display: block;
 }
 
+
+/* Here stylize company logo name. */
+
 #logo-section p {
     font-family: "Brush Script MT", cursive;
     font-style: italic;
@@ -32,6 +38,9 @@ body {
     color: #2B2A29;
     text-align: center;
 }
+
+
+/* Here stylize navigation of site. */
 
 .header-navigation {
     list-style-type: none;
@@ -52,7 +61,7 @@ body {
 }
 
 
-/*CSS for footer --> */
+/* CSS for footer */
 
 #footer {
     bottom: 0;
