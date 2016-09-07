@@ -3,14 +3,6 @@ var imagecount = 1;
 // This variable is number of picture in slider.
 var totalImage = 10;
 
-// var leftClickButton = document.getElementById("leftButton");
-
-// leftClickButton.addEventListener('clicked', pictureSlider(-1), false);
-
-// var rightClickButton = document.getElementById("rightButton");
-
-// rightClickButton.addEventListener("click", pictureSlider(1), false);
-
 // This function with name "pictureSlider" change the picture in slider if the buttons are clicked.
 function pictureSlider(number) {
     // In this variable save selected element from DOM.

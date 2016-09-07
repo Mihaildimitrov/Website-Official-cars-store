@@ -68,21 +68,21 @@
                 <div class="model-1">
                     <div class="model1-pic">
                         <img id="pic1-1" src="images/firstmodel/car1.1.png" alt="car">
-                        <button onclick="selectedModel1()" class="model1-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="1" onclick="selectedModel(event)" class="model1-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
                 <!-- This div contains image of car and button for more information. -->
                 <div class="model-2">
                     <div class="model2-pic">
                         <img id="pic2-1" src="images/secondmodel/car2.1.png" alt="car">
-                        <button onclick="selectedModel2()" class="model2-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="2" onclick="selectedModel(event)" class="model2-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
                 <!-- This div contains image of car and button for more information. -->
                 <div class="model-3">
                     <div class="mdoel3-pic">
                         <img id="pic3-2" src="images/thirdmodel/car3.1.png" alt="car">
-                        <button onclick="selectedModel3()" class="model3-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="3" onclick="selectedModel(event)" class="model3-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
             </div>
@@ -94,624 +94,131 @@
                 <div class="model-4">
                     <div class="model4-pic">
                         <img id="pic4-2" src="images/fourthmodel/car4.1.png" alt="car">
-                        <button onclick="selectedModel4()" class="model4-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="4" onclick="selectedModel(event)" class="model4-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
                 <!-- This div contains image of car and button for more information. -->
                 <div class="model-5">
                     <div class="model5-pic">
                         <img id="pic5-1" src="images/fifthmodel/car5.1.png" alt="car">
-                        <button onclick="selectedModel5()" class="model5-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="5" onclick="selectedModel(event)" class="model5-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
                 <!-- This div contains image of car and button for more information. -->
                 <div class="model-6">
                     <div class="mdoel6-pic">
                         <img id="pic6-2" src="images/sixthmodel/car6.1.png" alt="car">
-                        <button onclick="selectedModel6()" class="model6-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
+                        <button id="6" onclick="selectedModel(event)" class="model6-info" type=""><span class="glyphicon glyphicon-fullscreen"></span> More information</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ****************************************************************************** -->
-        <!-- Information window for model 1. -->
-        <section id="model1">
-            <section id="PHPmodel" class="row PHP-model">
-                <div class="row">
-                    <!-- This div contains title. -->
-                    <div class="col-sm-10 title">
-                        <h1>The new SUV PHP V6 Turbo</h1>
-                    </div>
-                    <!-- This div contains picture/button for close information window. -->
-                    <div class="col-sm-2 button-pic">
-                        <div class="close-picture">
-                            <img onclick="closeInfo()" id="closeButton" src="images/closeicon.png" alt="button">
-                        </div>
-                    </div>
-                </div>
+        <section id="template-wrapper">
+            <!-- Template ID. -->
+            <section id="mainSection">
+                <section id="PHPmodel" class="row PHP-model">
+                    <div class="row">
+                        <!-- This div contains title. -->
+                        <!-- Template title. -->
+                        <div id="titleModel" class="col-sm-10 title">
 
-                <div class="row">
-                    <!-- This div contains slider. -->
-                    <div class="col-sm-7">
-                        <div class="container">
-                            <!-- This div with class "picture-container" contains picture template for slider. -->
-                            <div class="picture-container">
-                                <img id="picture" src="images/firstmodel/car1.1.png" alt="car">
-                            </div>
-                            <!-- This div contains left button for change picture in slider. -->
-                            <div class="leftButton-holder">
-                                <img onclick="pictureSlider(-1)" id="leftButton" src="images/leftarrow.png" alt="button">
-                            </div>
-                            <!-- This div contains right button for change picture in slider. -->
-                            <div class="rightButton-holder">
-                                <img onclick="pictureSlider(1)" id="rightButton" src="images/rightarrow.png" alt="button">
-                            </div>
                         </div>
-                    </div>
-                    <!-- This div contains full information about selected model. -->
-                    <div class="col-sm-5">
-                        <div class="row">
-                            <!-- This div contains table with info about this model -->
-                            <div class="col-sm-12">
-                                <table>
-                                    <tr>
-                                        <td>Model:</td>
-                                        <td>PHP V6 TURBO</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brand</td>
-                                        <td>SUV MOTORS</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Model</td>
-                                        <td>PHP</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Engine</td>
-                                        <td>4.0 TDI V6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Power</td>
-                                        <td>435 hp/3750–5000 rpm.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maximum speed </td>
-                                        <td>340 km/h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Acceleration 0-100</td>
-                                        <td>4.8 sec</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel System</td>
-                                        <td>Diesel Commonrail</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of cylinders </td>
-                                        <td>6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel Type </td>
-                                        <td>Diesel</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of Gears</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel consumption</td>
-                                        <td>7.4 l/100 km.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CO2 emissions</td>
-                                        <td>194 g/km</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <!-- ****************************************************************************** -->
-        <!-- Information window for model 2. -->
-        <section id="model2">
-            <section id="PHPmodel" class="row PHP-model">
-                <div class="row">
-                    <!-- This div contains title. -->
-                    <div class="col-sm-10 title">
-                        <h1>The new SUV PYTHON V12 4X4</h1>
-                    </div>
-                    <!-- This div contains picture/button for close information window. -->
-                    <div class="col-sm-2 button-pic">
-                        <div class="close-picture">
-                            <img onclick="closeInfo2()" id="closeButton" src="images/closeicon.png" alt="button">
-                        </div>
-                    </div>
-                </div>
+                        <!-- This div contains picture/button for close information window. -->
+                        <div class="col-sm-2 button-pic">
+                            <!-- Template close icon. -->
+                            <div id="closeIcon" class="close-picture">
 
-                <div class="row">
-                    <!-- This div contains slider. -->
-                    <div class="col-sm-7">
-                        <div class="container">
-                            <!-- This div with class "picture-container" contains picture template for slider. -->
-                            <div class="picture-container">
-                                <img id="picture2" src="images/secondmodel/car2.1.png" alt="car">
-                            </div>
-                            <!-- This div contains left button for change picture in slider. -->
-                            <div class="leftButton-holder">
-                                <img onclick="pictureSlider2(-1)" id="leftButton" src="images/leftarrow.png" alt="button">
-                            </div>
-                            <!-- This div contains right button for change picture in slider. -->
-                            <div class="rightButton-holder">
-                                <img onclick="pictureSlider2(1)" id="rightButton" src="images/rightarrow.png" alt="button">
                             </div>
                         </div>
                     </div>
-                    <!-- This div contains full information about selected model. -->
-                    <div class="col-sm-5">
-                        <div class="row">
-                            <!-- This div contains table with info about this model -->
-                            <div class="col-sm-12">
-                                <table>
-                                    <tr>
-                                        <td>Model:</td>
-                                        <td>Python V12 4X4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brand</td>
-                                        <td>SUV MOTORS</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Model</td>
-                                        <td>PYTHON</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Engine</td>
-                                        <td>5.4 TDI V6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Power</td>
-                                        <td>615 hp/3750–5000 rpm.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maximum speed </td>
-                                        <td>375 km/h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Acceleration 0-100</td>
-                                        <td>3.8 sec</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel System</td>
-                                        <td>Diesel Commonrail</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of cylinders </td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel Type </td>
-                                        <td>Diesel</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of Gears</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel consumption</td>
-                                        <td>9.4 l/100 km.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CO2 emissions</td>
-                                        <td>254 g/km</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <!-- ****************************************************************************** -->
-        <!-- Information window for model 3. -->
-        <section id="model3">
-            <section id="PHPmodel" class="row PHP-model">
-                <div class="row">
-                    <!-- This div contains title. -->
-                    <div class="col-sm-10 title">
-                        <h1>The new SUV RUBY V6 Turbo</h1>
-                    </div>
-                    <!-- This div contains picture/button for close information window. -->
-                    <div class="col-sm-2 button-pic">
-                        <div class="close-picture">
-                            <img onclick="closeInfo3()" id="closeButton" src="images/closeicon.png" alt="button">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <!-- This div contains slider. -->
-                    <div class="col-sm-7">
-                        <div class="container">
-                            <!-- This div with class "picture-container" contains picture template for slider. -->
-                            <div class="picture-container">
-                                <img id="picture3" src="images/thirdmodel/car3.1.png" alt="car">
-                            </div>
-                            <!-- This div contains left button for change picture in slider. -->
-                            <div class="leftButton-holder">
-                                <img onclick="pictureSlider3(-1)" id="leftButton" src="images/leftarrow.png" alt="button">
-                            </div>
-                            <!-- This div contains right button for change picture in slider. -->
-                            <div class="rightButton-holder">
-                                <img onclick="pictureSlider3(1)" id="rightButton" src="images/rightarrow.png" alt="button">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- This div contains full information about selected model. -->
-                    <div class="col-sm-5">
-                        <div class="row">
-                            <!-- This div contains table with info about this model -->
-                            <div class="col-sm-12">
-                                <table>
-                                    <tr>
-                                        <td>Model:</td>
-                                        <td>RUBY V6 TURBO</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brand</td>
-                                        <td>SUV MOTORS</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Model</td>
-                                        <td>RUBY</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Engine</td>
-                                        <td>3.2 TDI V6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Power</td>
-                                        <td>364 hp/3750–5000 rpm.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maximum speed </td>
-                                        <td>315 km/h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Acceleration 0-100</td>
-                                        <td>4.5 sec</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel System</td>
-                                        <td>Direct injection</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of cylinders </td>
-                                        <td>6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel Type </td>
-                                        <td>Petrol</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of Gears</td>
-                                        <td>7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel consumption</td>
-                                        <td>10.4 l/100 km.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CO2 emissions</td>
-                                        <td>224 g/km</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <!-- ****************************************************************************** -->
-        <!-- Information window for model 4. -->
-        <section id="model4">
-            <section id="PHPmodel" class="row PHP-model">
-                <div class="row">
-                    <!-- This div contains title. -->
-                    <div class="col-sm-10 title">
-                        <h1>The new SUV JAVA V12 Turbo</h1>
-                    </div>
-                    <!-- This div contains picture/button for close information window. -->
-                    <div class="col-sm-2 button-pic">
-                        <div class="close-picture">
-                            <img onclick="closeInfo4()" id="closeButton" src="images/closeicon.png" alt="button">
-                        </div>
-                    </div>
-                </div>
+                    <div class="row">
+                        <!-- This div contains slider. -->
+                        <div class="col-sm-7">
+                            <div class="container">
+                                <!-- This div with class "picture-container" contains picture template for slider. -->
+                                <!-- Template first picture for slider. -->
+                                <div id="startPicture" class="picture-container">
 
-                <div class="row">
-                    <!-- This div contains slider. -->
-                    <div class="col-sm-7">
-                        <div class="container">
-                            <!-- This div with class "picture-container" contains picture template for slider. -->
-                            <div class="picture-container">
-                                <img id="picture4" src="images/fourthmodel/car4.1.png" alt="car">
-                            </div>
-                            <!-- This div contains left button for change picture in slider. -->
-                            <div class="leftButton-holder">
-                                <img onclick="pictureSlider4(-1)" id="leftButton" src="images/leftarrow.png" alt="button">
-                            </div>
-                            <!-- This div contains right button for change picture in slider. -->
-                            <div class="rightButton-holder">
-                                <img onclick="pictureSlider4 (1)" id="rightButton" src="images/rightarrow.png" alt="button">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- This div contains full information about selected model. -->
-                    <div class="col-sm-5">
-                        <div class="row">
-                            <!-- This div contains table with info about this model -->
-                            <div class="col-sm-12">
-                                <table>
-                                    <tr>
-                                        <td>Model:</td>
-                                        <td>JAVA V12 TURBO</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brand</td>
-                                        <td>SUV MOTORS</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Model</td>
-                                        <td>JAVA</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Engine</td>
-                                        <td>5.0 TDI V12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Power</td>
-                                        <td>521 hp/3750–5000 rpm.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maximum speed </td>
-                                        <td>375 km/h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Acceleration 0-100</td>
-                                        <td>4.5 sec</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel System</td>
-                                        <td>Diesel Commonrail</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of cylinders </td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel Type </td>
-                                        <td>Diesel</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of Gears</td>
-                                        <td>7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel consumption</td>
-                                        <td>8.4 l/100 km.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CO2 emissions</td>
-                                        <td>154 g/km</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <!-- ****************************************************************************** -->
-        <!-- Information window for model 5. -->
-        <section id="model5">
-            <section id="PHPmodel" class="row PHP-model">
-                <div class="row">
-                    <!-- This div contains title. -->
-                    <div class="col-sm-10 title">
-                        <h1>The new SUV C++ V10 SPORT</h1>
-                    </div>
-                    <!-- This div contains picture/button for close information window. -->
-                    <div class="col-sm-2 button-pic">
-                        <div class="close-picture">
-                            <img onclick="closeInfo5()" id="closeButton" src="images/closeicon.png" alt="button">
-                        </div>
-                    </div>
-                </div>
+                                </div>
+                                <!-- This div contains left button for change picture in slider. -->
+                                <!-- Template left button. -->
+                                <div id="leftButton" class="leftButton-holder">
 
-                <div class="row">
-                    <!-- This div contains slider. -->
-                    <div class="col-sm-7">
-                        <div class="container">
-                            <!-- This div with class "picture-container" contains picture template for slider. -->
-                            <div class="picture-container">
-                                <img id="picture5" src="images/fifthmodel/car5.1.png" alt="car">
-                            </div>
-                            <!-- This div contains left button for change picture in slider. -->
-                            <div class="leftButton-holder">
-                                <img onclick="pictureSlider5(-1)" id="leftButton" src="images/leftarrow.png" alt="button">
-                            </div>
-                            <!-- This div contains right button for change picture in slider. -->
-                            <div class="rightButton-holder">
-                                <img onclick="pictureSlider5(1)" id="rightButton" src="images/rightarrow.png" alt="button">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- This div contains full information about selected model. -->
-                    <div class="col-sm-5">
-                        <div class="row">
-                            <!-- This div contains table with info about this model -->
-                            <div class="col-sm-12">
-                                <table>
-                                    <tr>
-                                        <td>Model:</td>
-                                        <td>C++ V10 SPORT</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brand</td>
-                                        <td>SUV MOTORS</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Model</td>
-                                        <td>C++</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Engine</td>
-                                        <td>5.2 TFSI V6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Power</td>
-                                        <td>564 hp/3750–5000 rpm.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maximum speed </td>
-                                        <td>315 km/h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Acceleration 0-100</td>
-                                        <td>4.5 sec</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel System</td>
-                                        <td>Direct injection</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of cylinders </td>
-                                        <td>6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel Type </td>
-                                        <td>Petrol</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of Gears</td>
-                                        <td>7</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel consumption</td>
-                                        <td>10.4 l/100 km.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CO2 emissions</td>
-                                        <td>224 g/km</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <!-- ****************************************************************************** -->
-        <!-- Information window for model 6. -->
-        <section id="model6">
-            <section id="PHPmodel" class="row PHP-model">
-                <div class="row">
-                    <!-- This div contains title. -->
-                    <div class="col-sm-10 title">
-                        <h1>The new SUV C# V8 Turbo</h1>
-                    </div>
-                    <!-- This div contains picture/button for close information window. -->
-                    <div class="col-sm-2 button-pic">
-                        <div class="close-picture">
-                            <img onclick="closeInfo6()" id="closeButton" src="images/closeicon.png" alt="button">
-                        </div>
-                    </div>
-                </div>
+                                </div>
+                                <!-- This div contains right button for change picture in slider. -->
+                                <!-- Template right button. -->
+                                <div id="rightButton" class="rightButton-holder">
 
-                <div class="row">
-                    <!-- This div contains slider. -->
-                    <div class="col-sm-7">
-                        <div class="container">
-                            <!-- This div with class "picture-container" contains picture template for slider. -->
-                            <div class="picture-container">
-                                <img id="picture6" src="images/sixthmodel/car6.1.png" alt="car">
+                                </div>
                             </div>
-                            <!-- This div contains left button for change picture in slider. -->
-                            <div class="leftButton-holder">
-                                <img onclick="pictureSlider6(-1)" id="leftButton" src="images/leftarrow.png" alt="button">
-                            </div>
-                            <!-- This div contains right button for change picture in slider. -->
-                            <div class="rightButton-holder">
-                                <img onclick="pictureSlider6(1)" id="rightButton" src="images/rightarrow.png" alt="button">
+                        </div>
+                        <!-- This div contains full information about selected model. -->
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <!-- This div contains table with info about this model -->
+                                <div class="col-sm-12">
+                                    <!-- Template table. -->
+                                    <table>
+                                        <tr>
+                                            <td>Model:</td>
+                                            <td id="modelName"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brand</td>
+                                            <td>SUV MOTORS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Model</td>
+                                            <td id="model"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Engine</td>
+                                            <td id="engine"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Power</td>
+                                            <td id="power"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maximum speed </td>
+                                            <td id="maxSpeed"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Acceleration 0-100</td>
+                                            <td id="acceleration"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel System</td>
+                                            <td id="fuelSystem"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Number of cylinders </td>
+                                            <td id="cylinders"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel Type </td>
+                                            <td id="fuelType"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Number of Gears</td>
+                                            <td id="gears"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fuel consumption</td>
+                                            <td id="consumption"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CO2 emissions</td>
+                                            <td id="emission"></td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- This div contains full information about selected model. -->
-                    <div class="col-sm-5">
-                        <div class="row">
-                            <!-- This div contains table with info about this model -->
-                            <div class="col-sm-12">
-                                <table>
-                                    <tr>
-                                        <td>Model:</td>
-                                        <td>C# V8 TURBO</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brand</td>
-                                        <td>SUV MOTORS</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Model</td>
-                                        <td>C#</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Engine</td>
-                                        <td>4.0 TDI V6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Power</td>
-                                        <td>435 hp/3750–5000 rpm.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Maximum speed </td>
-                                        <td>340 km/h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Acceleration 0-100</td>
-                                        <td>4.8 sec</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel System</td>
-                                        <td>Diesel Commonrail</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of cylinders </td>
-                                        <td>6</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel Type </td>
-                                        <td>Diesel</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Number of Gears</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fuel consumption</td>
-                                        <td>7.4 l/100 km.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>CO2 emissions</td>
-                                        <td>194 g/km</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </section>
         </section>
     </main>
@@ -737,10 +244,10 @@
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js " integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js " integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js " integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD " crossorigin="anonymous "></script>
     <script src="JSfiles/ModelsJS.js"></script>
+    <script src="JSfiles/template.js"></script>
     <script src="JSfiles/infoModelOneJS.js"></script>
     <script src="JSfiles/InfomodeltwoJS.js"></script>
     <script src="JSfiles/InfomodelthreeJS.js"></script>

@@ -47,5 +47,6 @@ function closeInfo4() {
     // Show this elements.
     firstSectionFromMainTag.style.display = "block";
     secondSectionFromMainTag.style.display = "block";
-
+    // Set current element new id with name "mainSection".
+    element.id = 'mainSection';
 }

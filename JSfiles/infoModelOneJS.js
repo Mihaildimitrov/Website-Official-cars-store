@@ -4,10 +4,10 @@ var imagecount = 1;
 var totalImage = 4;
 
 
-// This function with name "pictureSlider" change the picture in slider if the buttons are clicked.
-function pictureSlider(number) {
+// This function with name "pictureSlider1" change the picture in slider if the buttons are clicked.
+function pictureSlider1(number) {
     // In this variable save selected element from DOM.
-    var image = document.getElementById('picture');
+    var image = document.getElementById('picture1');
     // Upgrade counter "imagecount"
     imagecount = imagecount + number;
     // When 'imagecount' is greater than total picture in slider, 'imagecount' is equal to 1, and show first picture in slider.
@@ -23,7 +23,7 @@ function pictureSlider(number) {
 }
 
 // Function for close window information.
-function closeInfo() {
+function closeInfo1() {
     // Save in variable element with ID "model1".
     var element = document.getElementById('model1');
     // Save in variable element with ID "row1-models".
@@ -47,5 +47,6 @@ function closeInfo() {
     // Show this elements.
     firstSectionFromMainTag.style.display = "block";
     secondSectionFromMainTag.style.display = "block";
-
+    // Set current element new id with name "mainSection".
+    element.id = 'mainSection';
 }
