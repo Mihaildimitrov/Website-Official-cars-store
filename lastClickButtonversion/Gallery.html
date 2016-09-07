@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="CSSfiles/GallerypageCSS.css" rel="stylesheet">
+    <link href="CSSfiles/headerAndFooterCSS.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>SUV Motors GALLERY</title>
+</head>
+
+<!-- This is body tag which is contains all information about Gallery page. -->
+<!-- Here we use bootstrap classes to add functionality. -->
+
+<body>
+    <!-- This is header tag, it is the same for each page. -->
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <div id="logo-section">
+                    <div id="logo-wrapper">
+                        <img src="images/logo.png" alt="Our logo">
+                    </div>
+                    <p>SUV Motors</p>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <nav>
+                    <!-- This is a list of all the pages of the application. -->
+                    <ul class="row header-navigation">
+                        <!-- This links sends to each page of the site. -->
+                        <li class="col-sm-3 text-center">
+                            <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Models.html"><span class="glyphicon glyphicon-search"></span> Models</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Gallery.html"><span class="glyphicon glyphicon-camera"></span> Gallery</a>
+                        </li>
+                        <li class="col-sm-2">
+                            <a href="Company.html"><span class="glyphicon glyphicon-user"></span> Company</a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="Contact.html"><span class="glyphicon glyphicon-earphone"></span> Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- This is Main tag which it contains all individual information about the Gallery page. -->
+    <main onload="pictureSliderAutomatically()" class="container">
+        <!-- This div with class "picture-container" contains picture template for slider -->
+        <div class="picture-container">
+            <img id="picture" src="images/Slider/car1.png" alt="car">
+        </div>
+        <!-- This div contains left button for change picture in slider -->
+        <div class="leftButton-holder">
+            <img onclick="pictureSlider(-1)" id="leftButton" src="images/leftarrow.png" alt="button">
+        </div>
+        <!-- This div contains right button for change picture in slider -->
+        <div class="rightButton-holder">
+            <img onclick="pictureSlider(1)" id="rightButton" src="images/rightarrow.png" alt="button">
+        </div>
+    </main>
+
+    <!-- This is footer tag, it is the same for each page. -->
+    <footer id="footer">
+        <div class="row mainfooter">
+            <!-- This link sends to github profile of creator. -->
+            <div class="col-sm-3">
+                <a id="github" href="https://github.com/Mihaildimitrov/Website-Official-cars-store">
+                    <p>Link to github repository</p>
+                </a>
+            </div>
+            <div id="motivationwords" class="col-sm-6">
+                <p>Our cars are a manifestation of our passion. Performance that cannot be measured, only felt. That’s why we call it art.</p>
+            </div>
+            <!-- This is the name of creator. -->
+            <div class="col-sm-3 create">
+                <p>Created by:</p>
+                <p>Mihail Dimitrov</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Here call the java script file from directory "JSfiles" with name "GalleryJS" for slider functionality -->
+    <!-- Move pictures automatically -->
+    <script src="JSfiles/GalleryJS.js"></script>
+</body>
+
+</html>

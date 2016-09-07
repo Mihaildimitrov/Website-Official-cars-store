@@ -1,0 +1,96 @@
+/*CSS for header --> */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#header {
+    background-color: #505050;
+}
+
+#logo-wrapper {
+    overflow: hidden;
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+#logo-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#logo-section p {
+    font-family: "Brush Script MT", cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2B2A29;
+    text-align: center;
+}
+
+.header-navigation {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.header-navigation li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    color: white;
+}
+
+.header-navigation li:hover a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: red;
+}
+
+
+/*CSS for footer --> */
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #505050;
+}
+
+#footer .mainfooter {
+    margin: 0;
+}
+
+#github p {
+    padding-left: 5px;
+    padding-top: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: white;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+#motivationwords p {
+    margin: 0;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+#footer .create {
+    padding-right: 6px;
+    text-align: right;
+}
+
+#footer .create p {
+    margin: 0;
+    text-decoration-style: none;
+    padding-right: 10px;
+    color: white;
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}

@@ -1,0 +1,145 @@
+.company-models #row1-models {
+    display: block;
+}
+
+.company-models #row2-models {
+    display: block;
+}
+
+#template-wrapper {
+    display: none;
+}
+
+.company-models .firstthreemodels {
+    background-image: url(Pictures/companymodels1.jpg);
+    background-size: 100% 100%;
+    background-position: 70%;
+    background-repeat: no-repeat;
+}
+
+.company-models .secondthreemodels {
+    background-image: url(Pictures/companymodels22.jpg);
+    background-size: 100% 100%;
+    background-position: 70%;
+    background-repeat: no-repeat
+}
+
+.company-models .firstthreemodels img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.company-models .firstthreemodels .model-1,
+.model-2,
+.model-3 {
+    overflow: hidden;
+    width: 33%;
+    height: 33%;
+    margin: 0;
+    margin-top: 30%;
+    margin-bottom: 5%;
+    display: inline-block;
+}
+
+.company-models .secondthreemodels img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.company-models .secondthreemodels .model-4,
+.model-5,
+.model-6 {
+    overflow: hidden;
+    width: 33%;
+    height: 33%;
+    margin: 0;
+    margin-bottom: 1%;
+    margin-top: 30%;
+    display: inline-block;
+}
+
+.company-models button {
+    margin: 0;
+    padding: 0;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.company-models .model1-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #2C2C24;
+    border-color: #2C2C24;
+    font-size: 1.5em;
+    margin-left: 16%;
+}
+
+.company-models .model2-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #2C2C24;
+    border-color: #2C2C24;
+    font-size: 1.5em;
+    margin-left: 20%;
+}
+
+.company-models .model3-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #2C2C24;
+    border-color: #2C2C24;
+    font-size: 1.5em;
+    margin-left: 20%;
+}
+
+.company-models .model4-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #939084;
+    border-color: #939084;
+    font-size: 1.5em;
+    margin-left: 20%;
+}
+
+.company-models .model5-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #939084;
+    border-color: #939084;
+    font-size: 1.5em;
+    margin-left: 20%;
+}
+
+.company-models .model6-info {
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+    background-color: #939084;
+    border-color: #939084;
+    font-size: 1.5em;
+    margin-left: 20%;
+}
+
+.company-models .model1-info:hover {
+    color: red;
+}
+
+.company-models .model2-info:hover {
+    color: red;
+}
+
+.company-models .model3-info:hover {
+    color: red;
+}
+
+.company-models .model4-info:hover {
+    color: red;
+}
+
+.company-models .model5-info:hover {
+    color: red;
+}
+
+.company-models .model6-info:hover {
+    color: red;
+}
