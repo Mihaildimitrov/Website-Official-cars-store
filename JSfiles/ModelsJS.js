@@ -4,7 +4,6 @@ var wrapper = document.getElementById("template-wrapper");
 function displayModel(event) {
     // Get the current id and save in variable.
     var id = event.target.attributes.id.value;
-    currentElementID = id;
 
     // Check if the element does not this class it added.
     // -1 becouse if class does not exist show -1.
@@ -77,7 +76,7 @@ function closeInfo() {
     // Save in variable element with ID "main-tag".
     var mainElement = document.getElementById('main-tag');
     // Save in variable element with ID "template-wrapper".
-    var templateElement = document.getElementById('template-wrapper');
+    //var templateElement = document.getElementById('template-wrapper');
 
     // Change style options:
     // Change width, height, backgroundColor, borderRadius and margin.
@@ -87,5 +86,29 @@ function closeInfo() {
     mainElement.style.margin = "0";
     mainElement.style.backgroundColor = "transparent";
 
-    templateElement.classList.value = "";
+    wrapper.classList.value = "";
+}
+
+// With this varable count picture in slider.
+var imagecount = 1;
+// This variable is number of picture in slider.
+var totalImage = 4;
+
+
+// This function with name "pictureSlider1" change the picture in slider if the buttons are clicked.
+function pictureSliderMini(number, imageModel, folderPath) {
+    // In this variable save selected element from DOM.
+    var image = document.getElementById(imageModel);
+    // Upgrade counter "imagecount"
+    imagecount = imagecount + number;
+    // When 'imagecount' is greater than total picture in slider, 'imagecount' is equal to 1, and show first picture in slider.
+    if (imagecount > totalImage) {
+        imagecount = 1;
+    }
+    // When 'imagecount' is less than one, 'imagecount' is equal to total picture in slider, and show last picture in slider.
+    if (imagecount < 1) {
+        imagecount = totalImage;
+    }
+    //Change property "src" of "image" variable, and change picture in slider.
+    image.src = folderPath + imagecount + ".png";
 }

@@ -1,4 +1,4 @@
-// With this varable count picture in slider.
+// With this varable count picture in slider(use to counter).
 var imagecount = 1;
 // This variable is number of picture in slider.
 var totalImage = 10;

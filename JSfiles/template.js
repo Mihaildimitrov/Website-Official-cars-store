@@ -1,14 +1,30 @@
 // This file contains the information required for the performance of the app.
 // This file contains information for company products.
 
+var model1 = "picture1",
+    model2 = "picture2",
+    model3 = "picture3",
+    model4 = "picture4",
+    model5 = "picture5",
+    model6 = "picture6";
+
+var folderPathImg1 = "images/firstmodel/car1.",
+    folderPathImg2 = "images/secondmodel/car2.",
+    folderPathImg3 = "images/thirdmodel/car3.",
+    folderPathImg4 = "images/fourthmodel/car4.",
+    folderPathImg5 = "images/fifthmodel/car5.",
+    folderPathImg6 = "images/sixthmodel/car6.";
+
+
+
 // This object with name "template" contains html templates.
 var template = {
     // Template if choose car with ID 1.
     1: {
         // This html img elements with function for current car.
         startPicture: '<img id="picture1" src="images/firstmodel/car1.1.png" alt="car">',
-        leftButton: '<img onclick="pictureSlider1(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
-        rightButton: '<img onclick="pictureSlider1(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
+        leftButton: '<img onclick="pictureSliderMini(-1, model1, folderPathImg1)" id="leftButton" src="images/leftarrow.png" alt="button">',
+        rightButton: '<img onclick="pictureSliderMini(1, model1, folderPathImg1)" id="rightButton" src="images/rightarrow.png" alt="button">',
         // This is title for current car.
         title: '<h1>The new SUV PHP V6 Turbo</h1>'
     },
@@ -16,8 +32,8 @@ var template = {
     2: {
         // This html img elements with function for current car.
         startPicture: '<img id="picture2" src="images/secondmodel/car2.1.png" alt="car">',
-        leftButton: '<img onclick="pictureSlider2(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
-        rightButton: '<img onclick="pictureSlider2(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
+        leftButton: '<img onclick="pictureSliderMini(-1, model2, folderPathImg2)" id="leftButton" src="images/leftarrow.png" alt="button">',
+        rightButton: '<img onclick="pictureSliderMini(1, model2, folderPathImg2)" id="rightButton" src="images/rightarrow.png" alt="button">',
         // This is title for current car.
         title: '<h1>The new SUV PYTHON V12 4X4</h1>'
     },
@@ -25,8 +41,8 @@ var template = {
     3: {
         // This html img elements with function for current car.
         startPicture: '<img id="picture3" src="images/thirdmodel/car3.1.png" alt="car">',
-        leftButton: '<img onclick="pictureSlider3(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
-        rightButton: '<img onclick="pictureSlider3(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
+        leftButton: '<img onclick="pictureSliderMini(-1, model3, folderPathImg3)" id="leftButton" src="images/leftarrow.png" alt="button">',
+        rightButton: '<img onclick="pictureSliderMini(1, model3, folderPathImg3)" id="rightButton" src="images/rightarrow.png" alt="button">',
         // This is title for current car.
         title: '<h1>The new SUV RUBY V6 Turbo</h1>'
     },
@@ -34,8 +50,8 @@ var template = {
     4: {
         // This html img elements with function for current car.
         startPicture: '<img id="picture4" src="images/fourthmodel/car4.1.png" alt="car">',
-        leftButton: '<img onclick="pictureSlider4(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
-        rightButton: '<img onclick="pictureSlider4(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
+        leftButton: '<img onclick="pictureSliderMini(-1, model4, folderPathImg4)" id="leftButton" src="images/leftarrow.png" alt="button">',
+        rightButton: '<img onclick="pictureSliderMini(1, model4, folderPathImg4)" id="rightButton" src="images/rightarrow.png" alt="button">',
         // This is title for current car.
         title: '<h1>The new SUV JAVA V12 Turbo</h1>'
     },
@@ -43,8 +59,8 @@ var template = {
     5: {
         // This html img elements with function for current car.
         startPicture: '<img id="picture5" src="images/fifthmodel/car5.1.png" alt="car">',
-        leftButton: '<img onclick="pictureSlider5(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
-        rightButton: '<img onclick="pictureSlider5(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
+        leftButton: '<img onclick="pictureSliderMini(-1, model5, folderPathImg5)" id="leftButton" src="images/leftarrow.png" alt="button">',
+        rightButton: '<img onclick="pictureSliderMini(1, model5, folderPathImg5)" id="rightButton" src="images/rightarrow.png" alt="button">',
         // This is title for current car.
         title: '<h1>The new SUV C++ V10 SPORT</h1>'
     },
@@ -52,8 +68,8 @@ var template = {
     6: {
         // This html img elements with function for current car.
         startPicture: '<img id="picture6" src="images/sixthmodel/car6.1.png" alt="car">',
-        leftButton: '<img onclick="pictureSlider6(-1)" id="leftButton" src="images/leftarrow.png" alt="button">',
-        rightButton: '<img onclick="pictureSlider6(1)" id="rightButton" src="images/rightarrow.png" alt="button">',
+        leftButton: '<img onclick="pictureSliderMini(-1, model6, folderPathImg6)" id="leftButton" src="images/leftarrow.png" alt="button">',
+        rightButton: '<img onclick="pictureSliderMini(1, model6, folderPathImg6)" id="rightButton" src="images/rightarrow.png" alt="button">',
         // This is title for current car.
         title: '<h1>The new SUV C# V8 Turbo</h1>'
     },
