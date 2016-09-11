@@ -2,11 +2,10 @@
 var wrapper = document.getElementById("template-wrapper");
 
 function displayModel(event) {
-    // Get the current id and save in variable.
+    // Get the current id of the button which is clicked and save in variable.
     var id = event.target.attributes.id.value;
 
-    // Check if the element does not this class it added.
-    // -1 becouse if class does not exist show -1.
+    // Check if the element has no class with name ‘modal’ added him.
     if (wrapper.classList.value.indexOf("modal") == -1) {
         wrapper.classList += "modal";
     }

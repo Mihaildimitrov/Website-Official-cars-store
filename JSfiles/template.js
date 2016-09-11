@@ -1,6 +1,7 @@
 // This file contains the information required for the performance of the app.
 // This file contains information for company products.
 
+// This is variable for function pictureSliderMini, call function with this variable.
 var model1 = "picture1",
     model2 = "picture2",
     model3 = "picture3",
@@ -8,6 +9,7 @@ var model1 = "picture1",
     model5 = "picture5",
     model6 = "picture6";
 
+// This is variable for function pictureSliderMini, call function with this variable.
 var folderPathImg1 = "images/firstmodel/car1.",
     folderPathImg2 = "images/secondmodel/car2.",
     folderPathImg3 = "images/thirdmodel/car3.",
