@@ -74,8 +74,6 @@ function closeInfo() {
 
     // Save in variable element with ID "main-tag".
     var mainElement = document.getElementById('main-tag');
-    // Save in variable element with ID "template-wrapper".
-    //var templateElement = document.getElementById('template-wrapper');
 
     // Change style options:
     // Change width, height, backgroundColor, borderRadius and margin.
